@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+   <bean id="debit" class="in.channa.DebitCard"></bean>
+        
+   <bean id="crdt" class="in.channa.CreditCard"></bean>
+
+   <bean id="upi" class="in.channa.UpiPayment"></bean>
+   
+   <bean id="billcollect" class="in.channa.BillCollector" > 
+     <property name="ipayment" ref="crdt"></property>
+     <property name="amount" value="10000"></property>
+   </bean>
+   
+</beans>
