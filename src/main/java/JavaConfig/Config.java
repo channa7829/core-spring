@@ -7,5 +7,5 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages = "JavaConfig")
 public class Config {
 
-	
+
 }

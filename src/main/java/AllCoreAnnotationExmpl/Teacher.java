@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public interface Teacher {
-	
-	public String teach(); 
+
+	public String teach();
 
 }

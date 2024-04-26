@@ -6,10 +6,10 @@ import org.springframework.stereotype.Component;
 public class College {
 
 	public College() {
-		
+
 		System.out.println(" colleage bean is created in context");
 	}
-	
-	
+
+
 
 }
